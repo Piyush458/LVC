@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration for LVC</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div style="background-image:url(../image/form.jpeg);
+     width:400px; background-size: 100% 100%; border: 2px solid black; font-size: 20px; border-radius: 10px;">
+     <h1>Registration form</h1>
+    <form name="Registration form" method="POST" action="">
+        Name:<input type="text" required placeholder="Your Name"><br>
+        Gender:<input type="radio" id="Male" name="male" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="Female" name="Female" value="Female">
+        <label for="Female">Female</label><br>
+        <label for="location">Location:</label>
+        <select id="location" name="location">
+            <option value="">Select</option>
+            <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+        </select><br>
+        Email:<input type="email" required><br>
+        Software Knowledge:<br><input type="checkbox" id="MERN" name="MERN" value="MERN">
+        <label for="MERN">MERN</label><br>
+        <input type="checkbox" id="PERN" name="PERN" value="PERN">
+        <label for="PERN"> PERN</label><br>
+        <input type="checkbox" id="Full Stack" name="Full Stack" value="Full Stack">
+        <label for="Full Stack"> Full Stack</label><br>
+        Remarks:<br><textarea rows="4" cols="31" placeholder="Enter your remark">
+            </textarea>
+        <section style="padding-left:160px">    
+        <input type="Submit" value="submit" style="background-color: brown;"></form><br>
+        </section>
+    </form>
+    </div>
+</body>
+</html>
