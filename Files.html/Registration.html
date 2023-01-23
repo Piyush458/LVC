@@ -1,6 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script>
+        function myfunc1(){
+            name = f1.name.value;
+            gender = f1.gender.value;
+            course = f1.course.value;
+            email = f1.email.value;
+            requirements = f1.requirements.value;
+            flag=0;
+            // check if the name is empty
+            if(name == ""){
+                alert("Enter name first");
+            }
+            // check if the email is empty
+            else if(email == ""){
+                alert("Enter your Email ID");
+            }
+            else{
+                alert("Name: "+name+"\nGender: "+gender+"\nEmail ID: "+email+"\n Courses Required: "+course+"\nOther Requirements: "+requirements);
+                flag = 1;
+            }
+            if(flag==1){
+                window.open("/Users/piyushparashrampuria/Documents/Website/Files.html/index.html");
+            }
+        }
+    </script>
+    <script>
+        function handleSelect()
+        {
+           window.open("https://www.google.com/");
+        }
+      </script>
+      
+</head>
+
+<body>
+    <form name="f1" onsubmit="myfunc1()" action="">
+        Name: <input type="text" name="name"><br><br><br>
+        Gender:
+        <input type="radio" name="gender" value="Male"> Male </input>
+        <input type="radio" name="gender" value="Female"> Female </input>
+        <br><br><br>
+        Email ID: <input type="email" name="email"><br><br><br>
+        Select a Course: <select name="course" id="course" onchange="handleSelect()">
+            <option name="course"> Choose Some Course </option><br>
+            <option value="a" name="course">index</option><br>
+            <option value="b" name="course">photo gallery</option><br>
+            <option value="c" name="course"> Machine Learning </option><br>
+            <option value="d" name="course"> Internet of Things </option><br>
+            <option value="e" name="course"> Cloud Computing </option><br>
+        </select>
+        <br><br><br>
+        Other Requirements: <textarea rows="5" cols="50" name="requirements"></textarea><br><br><br><br>
+        <input type="submit" name="submit"> 
+    </form>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +72,7 @@
     <div style="background-image:url(../image/form.jpeg);
      width:400px; background-size: 100% 100%; border: 2px solid black; font-size: 20px; border-radius: 10px;">
      <h1>Registration form</h1>
-        <p>Fill this form to connect to Live Virtual Classes.</p>
+     <p>Fill this form to connect to Live Virtual Classes.</p>
     <form name="Registration form" method="POST" action="">
         Name:<input type="text" required placeholder="Your Name"><br>
         Gender:<input type="radio" id="Male" name="male" value="Male">
@@ -40,4 +101,4 @@
     </form>
     </div>
 </body>
-</html>
+</html> -->
